@@ -2,3 +2,36 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+:root {
+    /* high ocean*/
+    --lightblue: #b0ccd7;
+    --black: #110a18;
+    --highlight: #f14e17;
+    /* deep ocean */
+    --navy: #0f1534;
+    --white: #f3feff;
+    --deeplight: #dd2e8b; 
+}
+
+
+/* The toggle for light and dark mode should be here*/
+
+.toggle{
+    /* fill out later */
+}
+
+.dark {
+    background-color: var(--navy);
+    color: var(--white);
+    a {
+        color: var(--deeplight);
+    }
+}
+
+.light {
+    background-color: var(--lightblue);
+    color: var(--black);
+    a {
+        color: var(--highlight);
+    }
+}
