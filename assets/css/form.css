@@ -23,10 +23,8 @@ main {
         display: flex;
         flex-direction: row;
         img {
-            width: 100px;
-            height: 150%;
-            margin: 20px;
             align-items: center;
+            width: 100px;
             border: 2px red solid;
         }
     }
@@ -34,9 +32,13 @@ main {
     section {
         padding: 100px;
         border: 2px red solid;
+        margin: 20px;
     }
 }
 
-footer 
+footer {
+
+    border: 2px red solid;
+}
 
 
