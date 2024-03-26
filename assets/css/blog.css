@@ -14,3 +14,7 @@ header {
     }
 }
 
+section {
+    padding: 10%;
+    border: 2px red solid;
+}
