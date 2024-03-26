@@ -18,3 +18,11 @@ section {
     padding: 10%;
     border: 2px red solid;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px red solid;
+}
