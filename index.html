@@ -22,20 +22,22 @@
             </aside>
             <section>
                 <article>
-                    <p>
-                        <label>Username
-                        <input type="text" name="username" id="username" placeholder="Username"/>
-                        </label>
-                    </p>
-                    <p>
-                        <label>Blog Title</label>
-                        <input type="text" name="blogTitle" id="title" placeholder="Blog Title"/>
-                    </p>
-                    <p>
-                        <label>Blog Content</label>
-                        <input type="text" name="blogContent" id="content" placeholder="(ex. How was your day?)"/>
-                    </p>
-                    <button>POST!</button>
+                    <form method="POST">
+                        <p>
+                            <label>Username</label>
+                            <input type="text" name="username" id="username" placeholder="Username"/>
+                        </p>
+                        <p>
+                            <label>Blog Title</label>
+                            <input type="text" name="blogTitle" id="title" placeholder="Blog Title"/>
+                        </p>
+                        <p>
+                            <label>Blog Content</label>
+                            <input type="text" name="blogContent" id="content" placeholder="(ex. How was your day?)"/>
+                        </p>
+                        <div id="warning"></div>
+                        <button>POST!</button>
+                    </form>
                 </article>
             </section>
         </main>
