@@ -14,9 +14,6 @@ function displayMessage(type, message) {
 postButton.addEventListener('click', function(event) {
     event.preventDefault();
 
-    const post = {
-        
-    }
     const username = document.querySelector('#username').value;
     const blogTitle = document.querySelector('#title').value;
     const blogContent = document.querySelector('#content').value;
@@ -31,6 +28,7 @@ postButton.addEventListener('click', function(event) {
         displayMessage('success', 'Posted!');
 
         
+
     }
 
 })

@@ -57,11 +57,13 @@ main {
     padding: 3px;
     width: 100%;
 }
+
 #title {
     font-size: 25px;
     padding: 3px;
     width: 100%;
 }
+
 #content {
     font-size: 25px;
     padding: 3px;
@@ -78,6 +80,7 @@ main {
 #warning.error {
     visibility: visible;
 }
+
 #warning.success {
     color: chartreuse;
 }
@@ -85,6 +88,7 @@ main {
 #warning.error {
     color: rgb(173, 2, 39);
 }
+
 #post {
     margin: 10px;
     padding: 5px;
@@ -94,7 +98,6 @@ main {
 
 }
 
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -102,5 +105,3 @@ footer {
     padding: 20px;
     border: 2px red solid;
 }
-
-
