@@ -41,11 +41,11 @@ main {
         margin: 2%;
     }
     article {
-        padding: 10%;
+        padding: 5%;
         min-width: 50%;
         border: 2px red solid;
         p {
-            padding: 10% 10%;
+            padding: 2% 10%;
             font-size: 20px;
             border: 2px red solid;
             flex-grow: inherit;
@@ -53,24 +53,28 @@ main {
         }
         button {
             margin: 10px;
+            padding: 5px;
+            font-size: 20px;
             display:flex;
             flex-direction: column;
         }
     }
 }
 
-#title {
-    font-size: 30px;
+#username {
+    font-size: 25px;
     padding: 3px;
     width: 100%;
 }
-
-#content{
-    /*display: inline-block; */
-    font-size: 17px;
-    padding: 10px;
+#title {
+    font-size: 25px;
+    padding: 3px;
     width: 100%;
-
+}
+#content {
+    font-size: 25px;
+    padding: 3px;
+    width: 100%;
 }
 
 
