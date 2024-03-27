@@ -1,8 +1,10 @@
 const usernameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
-const postButton = document.querySelector('#post')
+const postButton = document.querySelector('#post');
 const msgDiv = document.querySelector('#warning');
+
+const getData = 
 
 // renderLastPosted();
 
@@ -14,6 +16,11 @@ function displayMessage(type, message) {
 postButton.addEventListener('click', function(event) {
     event.preventDefault();
 
+    const post = {
+        username: usernameInput.value, 
+        title: titleInput.value,
+        content: contentInput.value,
+    }
     const username = document.querySelector('#username').value;
     const blogTitle = document.querySelector('#title').value;
     const blogContent = document.querySelector('#content').value;
@@ -27,9 +34,11 @@ postButton.addEventListener('click', function(event) {
     } else {
         displayMessage('success', 'Posted!');
 
-        
+
 
     }
+
+    localStorage.setItem('post', JSON.stringify(post));
 
 })
 
