@@ -2,15 +2,15 @@ const usernameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
 const postButton = document.querySelector('#post');
-const msgDiv = document.querySelector('#warning');
+const warningDiv = document.querySelector('#warning');
 
-const getData = 
+// const getData = 
 
 // renderLastPosted();
 
 function displayMessage(type, message) {
-    msgDiv.textContent = message;
-    msgDiv.setAttribute('class', type);
+    warningDiv.textContent = message;
+    warningDiv.setAttribute('class', type);
 }
 
 postButton.addEventListener('click', function(event) {
@@ -33,9 +33,6 @@ postButton.addEventListener('click', function(event) {
         displayMessage('error', 'Please, add blog content.')
     } else {
         displayMessage('success', 'Posted!');
-
-
-
     }
 
     localStorage.setItem('post', JSON.stringify(post));
