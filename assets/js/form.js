@@ -4,7 +4,7 @@ const contentInput = document.querySelector('#content');
 const postButton = document.querySelector('#post');
 const warningDiv = document.querySelector('#warning');
 
-// const getData = 
+const getData = localStorage.getItem('post');
 
 // renderLastPosted();
 
@@ -21,21 +21,22 @@ postButton.addEventListener('click', function(event) {
         title: titleInput.value,
         content: contentInput.value,
     }
-    const username = document.querySelector('#username').value;
-    const blogTitle = document.querySelector('#title').value;
-    const blogContent = document.querySelector('#content').value;
+    console.log(username)
+    // const username = document.querySelector('#username').value;
+    // const blogTitle = document.querySelector('#title').value;
+    // const blogContent = document.querySelector('#content').value;
 
-    if (username === '') {
+    if (usernameInput.value === '') {
         displayMessage('error', 'Please, add a username.');
-    } else if (blogTitle === '') {
+    } else if (titleInput.value === '') {
         displayMessage('error', 'Please, add a blog title.');
-    } else if (blogContent === '') {
-        displayMessage('error', 'Please, add blog content.')
+    } else if (contentInput.value === '') {
+        displayMessage('error', 'Please, add blog content.');
     } else {
         displayMessage('success', 'Posted!');
+
+        localStorage.setItem('post', JSON.stringify(post));
     }
-
-    localStorage.setItem('post', JSON.stringify(post));
-
-})
+    console.log(usernameInput)
+});
 

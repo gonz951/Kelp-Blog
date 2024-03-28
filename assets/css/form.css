@@ -72,17 +72,18 @@ main {
 
 #warning {
     visibility: hidden;
-    margin: 10px;
-    font-size: 13px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200px;
 }
 
-#warning.success
+#warning.success,
 #warning.error {
     visibility: visible;
 }
 
 #warning.success {
-    color: chartreuse;
+    color: rgb(0, 0, 0);
 }
 
 #warning.error {
