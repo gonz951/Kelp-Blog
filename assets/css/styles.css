@@ -7,8 +7,8 @@
 :root {
     /* high ocean*/
     --lightblue: #b0ccd7;
-    --black: #110a18;
-    --highlight: #f14e17;
+    --black: #1d1624;
+    --highlight: #f18417;
     /* deep ocean */
     --navy: #0f1534;
     --white: #f3feff;
@@ -19,20 +19,24 @@
 /* The toggle for light and dark mode should be here*/
 
 .toggle{
-    /* fill out later */
+    padding: 20px;
 }
 
+/* dark mode */
 .dark {
     background-color: var(--navy);
     color: var(--white);
+    border: var(--white);
     a {
         color: var(--deeplight);
     }
 }
 
+/* light mode */
 .light {
     background-color: var(--lightblue);
     color: var(--black);
+    border: var(--black);
     a {
         color: var(--highlight);
     }
