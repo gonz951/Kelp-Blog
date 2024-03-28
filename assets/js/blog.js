@@ -1,5 +1,5 @@
-let blogPost = JSON.parse(localStorage.getItem('blogData'));
+let blogPost = JSON.parse(localStorage.getItem('post'));
 
-function //get shit from local storage () {
-    document.getElementById('')
+function getData() {
+    document(getElementById(''))
 }
