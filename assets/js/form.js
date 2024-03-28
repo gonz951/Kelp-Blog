@@ -4,7 +4,7 @@ const contentInput = document.querySelector('#content');
 const postButton = document.querySelector('#post');
 const warningDiv = document.querySelector('#warning');
 
-const getData = localStorage.getItem('post');
+const getData = localStorage.getItem('postData');
 console.log(getData)
 
 // renderLastPosted();
@@ -21,14 +21,14 @@ function displayMessage(type, message) {
 }
 
 function renderLastPosted() {
-    
+    // should this even have anything, is this needed
 }
 
 postButton.addEventListener('click', function(event) {
     event.preventDefault();
     
 
-    const post = {
+    const postData = {
         username: usernameInput.value, 
         title: titleInput.value,
         content: contentInput.value,
@@ -47,9 +47,9 @@ postButton.addEventListener('click', function(event) {
     } else {
         displayMessage('success', 'Posted!');
 
-        localStorage.setItem('post', JSON.stringify(post));
+        localStorage.setItem('postData', JSON.stringify(postData));
     }
-    posts.push(post); 
+    posts.push(postData); 
     console.log(usernameBox);
 });
 
