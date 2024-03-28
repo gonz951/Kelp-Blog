@@ -1,10 +1,10 @@
-let posts = JSON.parse(localStorage.getItem('postData'));
+// let posts = JSON.parse(localStorage.getItem('postData'));
 
-console.log(posts[0].title)
+// console.log(posts[0].title)
 
-function getBlogs() {
-    document.getElementById('title').textContent = posts[0].title;
-}
+// function getBlogs() {
+//     document.getElementById('title').textContent = posts[0].title;
+// }
 
 // function postBubble() {
 
@@ -17,5 +17,5 @@ function getBlogs() {
 
 //     //damn
 // }
-
+ 
 // postBubble();

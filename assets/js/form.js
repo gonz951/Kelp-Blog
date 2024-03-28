@@ -5,6 +5,7 @@ const postButton = document.querySelector('#post');
 const warningDiv = document.querySelector('#warning');
 
 const getData = localStorage.getItem('postData');
+
 console.log(getData)
 
 // renderLastPosted();
@@ -32,8 +33,7 @@ postButton.addEventListener('click', function(event) {
         username: usernameInput.value, 
         title: titleInput.value,
         content: contentInput.value,
-    }
-    console.log(username)
+    };
     const usernameBox = document.querySelector('#username').value;
     const titleBox = document.querySelector('#title').value;
     const contentBox = document.querySelector('#content').value;
@@ -50,6 +50,5 @@ postButton.addEventListener('click', function(event) {
         localStorage.setItem('postData', JSON.stringify(postData));
     }
     posts.push(postData); 
-    console.log(usernameBox);
 });
 
