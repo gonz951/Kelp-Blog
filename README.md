@@ -2,13 +2,6 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 This was made for the purpose of having an outlet for being silly. On the surface, it's meant to have a simple fish theme (which will be more apparent once it's more polished). Inwardly, this blog was meant to be a challenge on using the local storage functions. With a little more time, this site will be more functional!
 
 ## Table of Contents
