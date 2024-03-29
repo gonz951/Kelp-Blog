@@ -9,7 +9,7 @@ const getData = localStorage.getItem('postData');
 
 // renderLastPosted();
 
-let posts = []
+let posts = [ ]
 
 if (getData) {
     posts = JSON.parse(getData)
@@ -46,11 +46,12 @@ postButton.addEventListener('click', function(event) {
         displayMessage('error', 'Please, add blog content.');
     } else {
         displayMessage('success', 'Posted!');
+        console.log(posts)
 
         localStorage.setItem('postData', JSON.stringify(posts));
-        posts.push(postData); 
+        posts.push(postData);
+        window.location.href('./blog.html');
     }
-
-    window.location.replace('./blog.html');
+    
 });
 

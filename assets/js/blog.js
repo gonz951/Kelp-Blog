@@ -15,7 +15,15 @@
 //                 <h4><span class="blog-username">${username}</span></h4>
 //             </section>`
 
-//     //damn
 // }
  
 // postBubble();
+
+
+function getBlogs() {
+    document.getElementById('blog-title').textContent = posts[0].title;
+    document.getElementById('blog-content').textContent = posts[0].content;
+    document.getElementById('blog-username').textContent = posts[0].username;
+}
+
+getBlogs();
