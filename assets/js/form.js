@@ -6,7 +6,6 @@ const warningDiv = document.querySelector('#warning');
 
 const getData = localStorage.getItem('postData');
 
-console.log(getData)
 
 // renderLastPosted();
 
@@ -14,7 +13,8 @@ let posts = []
 
 if (getData) {
     posts = JSON.parse(getData)
-}
+} 
+console.log(getData)
 
 function displayMessage(type, message) {
     warningDiv.textContent = message;
@@ -32,8 +32,8 @@ postButton.addEventListener('click', function(event) {
     const postData = {
         username: usernameInput.value, 
         title: titleInput.value,
-        content: contentInput.value,
-    };
+        content: contentInput.value
+    }
     const usernameBox = document.querySelector('#username').value;
     const titleBox = document.querySelector('#title').value;
     const contentBox = document.querySelector('#content').value;
@@ -47,8 +47,10 @@ postButton.addEventListener('click', function(event) {
     } else {
         displayMessage('success', 'Posted!');
 
-        localStorage.setItem('postData', JSON.stringify(postData));
+        localStorage.setItem('postData', JSON.stringify(posts));
+        posts.push(postData); 
     }
-    posts.push(postData); 
+
+    window.location.replace('./blog.html');
 });
 
