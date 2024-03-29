@@ -18,7 +18,7 @@
 
 /* The toggle for light and dark mode should be here*/
 
-.toggle{
+#theme-toggle{
     padding: 20px;
 }
 

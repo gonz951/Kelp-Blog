@@ -9,7 +9,7 @@ const getData = localStorage.getItem('postData');
 
 // renderLastPosted();
 
-let posts = [ ]
+let posts = []
 
 if (getData) {
     posts = JSON.parse(getData)
@@ -22,8 +22,10 @@ function displayMessage(type, message) {
 }
 
 function renderLastPosted() {
-    // should this even have anything, is this needed
-}
+    window.location.replace(
+        './blog.html'
+    )
+};
 
 postButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -50,7 +52,7 @@ postButton.addEventListener('click', function(event) {
 
         localStorage.setItem('postData', JSON.stringify(posts));
         posts.push(postData);
-        window.location.href('./blog.html');
+        renderLastPosted();
     }
     
 });
