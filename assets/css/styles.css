@@ -7,11 +7,12 @@
 :root {
     /* high ocean*/
     --lightblue: #b0ccd7;
-    --black: #1d1624;
+    --black: #272032;
     --highlight: #f18417;
     /* deep ocean */
     --navy: #0f1534;
-    --white: #f3feff;
+    --white: #d0e7ea;
+    --deepbubble: #5f8296;
     --deeplight: #dd2e8b; 
 }
 
@@ -30,6 +31,24 @@
     a {
         color: var(--deeplight);
     }
+    header {
+        border-bottom: 8px var(--deepbubble) solid;
+    }
+    main aside {
+        border-right: 8px var(--deepbubble) solid;
+    }
+    footer {
+        border-top: 8px var(--deepbubble) solid;
+    }
+    article {
+        border: 5px var(--deepbubble) solid;
+    }
+}
+
+.dark .blog-title,
+.dark .blog-content,
+.dark .blog-username {
+    border: 5px var(--deepbubble) solid;
 }
 
 /* light mode */
@@ -40,4 +59,27 @@
     a {
         color: var(--highlight);
     }
+    header {
+        border-bottom: 8px var(--black) solid;
+    }
+    main aside {
+        border-right: 8px var(--black) solid;
+    }
+    footer {
+        border-top: 8px var(--black) solid;
+    }
+    article {
+        border: 5px var(--black) solid;
+    }
+}
+
+.light .blog-title,
+.light .blog-content,
+.light .blog-username {
+    border: 5px var(--black) solid;
+}
+
+
+.back-btn {
+    border-radius: 40px;
 }

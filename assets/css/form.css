@@ -3,7 +3,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border: 2px red solid;
     h1 {
         font-size: 70px;
     }
@@ -21,12 +20,10 @@ main {
         display: flex;
         flex-direction: row;
         padding: 10%;
-        /*border: 2px red solid; */
-        border-right: 10px red solid;
         img {
             align-items: center;
             width: 200px;
-            border: 2px red solid;
+            /* border: 2px red solid; */
         }
     }
 
@@ -41,13 +38,16 @@ main {
     article {
         padding: 5%;
         min-width: 50%;
-        border: 2px red solid;
+        border-radius: 40px;
         p {
             padding: 2% 10%;
             font-size: 20px;
-            border: 2px red solid;
+            /* border: 2px red solid; */
             flex-grow: inherit;
             flex-direction: column;
+            label {
+                padding: 0 10px;
+            }
         }
     }
 }
@@ -56,18 +56,21 @@ main {
     font-size: 25px;
     padding: 3px;
     width: 100%;
+    border-radius: 15px;
 }
 
 #title {
     font-size: 25px;
     padding: 3px;
     width: 100%;
+    border-radius: 15px;
 }
 
 #content {
     font-size: 25px;
     padding: 3px;
     width: 100%;
+    border-radius: 15px;
 }
 
 #warning {
@@ -83,11 +86,11 @@ main {
 }
 
 #warning.success {
-    color: rgb(0, 0, 0);
+    color: rgb(215, 171, 27);
 }
 
 #warning.error {
-    color: rgb(173, 2, 39);
+    color: rgb(213, 20, 62);
 }
 
 #post {
@@ -96,6 +99,7 @@ main {
     font-size: 20px;
     display:flex;
     flex-direction: column;
+    border-radius: 50px;
 
 }
 
@@ -104,5 +108,4 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border: 2px red solid;
 }
