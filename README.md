@@ -9,7 +9,9 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
-## Table of Contents (Optional)
+This was made for the purpose of having an outlet for being silly. On the surface, it's meant to have a simple fish theme (which will be more apparent once it's more polished). Inwardly, this blog was meant to be a challenge on using the local storage functions. With a little more time, this site will be more functional!
+
+## Table of Contents
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
@@ -20,7 +22,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No installation required! You only need a link: 
 
 ## Usage
 
@@ -34,14 +36,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
 How to add a link to a button in HTML:
 https://www.shecodes.io/athena/17038-how-to-add-a-link-to-my-button-in-html
+
+Most other things within the site were references from the various files within Web-APIs in the UofU repo. 
 
 
 ## License
